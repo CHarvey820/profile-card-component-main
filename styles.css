@@ -25,6 +25,10 @@
   padding: 0;
 }
 
+body{
+    
+}
+
 main{
     background-color: var(--clr-dkCyan);
     height: 100vh;
@@ -32,6 +36,9 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: url("./images/bg-pattern-bottom.svg"), url("./images/bg-pattern-top.svg");
+    background-position: right -75px top 450px, left -75px bottom 450px;
+    background-repeat: no-repeat;
 }
 
 h2{
@@ -53,13 +60,13 @@ hr{
     opacity: 20%;
 }
 
+
 .container{
    width: 375px;
    background-color: white;
    border-radius: 1rem;
    font-family: var(--font-KumbhSans);
    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 20px;
-   z-index: 1;
 }
 
 .profile{
@@ -96,20 +103,6 @@ hr{
     z-index: 2;
     border-radius: 50%;
     border: 5px solid white;
-}
-
-.bgTop, .bgBottom{
-    position: absolute;
-}
-
-.bgTop{
-    left: -15%;
-    top: -80%;
-}
-
-.bgBottom{
-    right: -15%;
-    bottom: -80%;
 }
 
 /* pre-included attribution css moved from index <style> */
