@@ -1,0 +1,124 @@
+/* Given Stylings */
+:root {
+    /* colors */
+    --clr-dkCyan: hsl(185, 75%, 39%);
+    --clr-dkBlue: hsl(229, 23%, 23%);
+    --clr-dkGray: hsl(227, 10%, 46%);
+    --clr-gray: hsl(0, 0%, 59%);
+
+    /* fonts */
+    --font-KumbhSans:"Kumbh Sans", sans-serif;
+
+    /* font weights */
+    --wght-light: 400;
+    --wght-bold: 700;
+}
+
+/* CSS reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main{
+    background-color: var(--clr-dkCyan);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2{
+    color: var(--clr-dkBlue);
+    margin-top: 1rem;
+}
+
+h4, span{
+    color: var(--clr-dkGray);
+    font-weight: var(--wght-light);
+}
+
+span{
+    padding-left: .3rem;
+}
+
+hr{
+    border: 1px var(--clr-gray) solid;
+    opacity: 20%;
+}
+
+.container{
+   width: 375px;
+   background-color: white;
+   border-radius: 1rem;
+   font-family: var(--font-KumbhSans);
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 20px;
+   z-index: 1;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -3.563rem;
+    gap: .5rem;
+    margin-bottom: 2rem;
+}
+
+.socials{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    text-align: center;
+}
+
+.socialsSection h4{
+    margin-top: .5rem;
+    font-size: .75rem;
+    letter-spacing: .15rem;
+}
+
+.pattern{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    z-index: 1;
+    display: inline-block;
+}
+
+.avatar{
+    z-index: 2;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.bgTop, .bgBottom{
+    position: absolute;
+}
+
+.bgTop{
+    left: -15%;
+    top: -80%;
+}
+
+.bgBottom{
+    right: -15%;
+    bottom: -80%;
+}
+
+/* pre-included attribution css moved from index <style> */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+  }
+  .attribution a {
+    color: hsl(0, 0%, 100%);
+  }
